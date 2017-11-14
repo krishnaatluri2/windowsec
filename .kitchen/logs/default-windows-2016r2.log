@@ -1,0 +1,66 @@
+I, [2017-11-13T20:07:11.201311 #8268]  INFO -- default-windows-2016r2: -----> Converging <default-windows-2016r2>...
+I, [2017-11-13T20:07:11.205311 #8268]  INFO -- default-windows-2016r2: Preparing files for transfer
+I, [2017-11-13T20:07:11.205811 #8268]  INFO -- default-windows-2016r2: Preparing dna.json
+I, [2017-11-13T20:07:11.210811 #8268]  INFO -- default-windows-2016r2: Resolving cookbook dependencies with Berkshelf 6.3.1...
+I, [2017-11-13T20:07:12.448811 #8268]  INFO -- default-windows-2016r2: Removing non-cookbook files before transfer
+I, [2017-11-13T20:07:12.771311 #8268]  INFO -- default-windows-2016r2: Preparing validation.pem
+I, [2017-11-13T20:07:12.775311 #8268]  INFO -- default-windows-2016r2: Preparing client.rb
+E, [2017-11-13T20:07:22.610811 #8268] ERROR -- default-windows-2016r2: Converge failed on instance <default-windows-2016r2>.
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: ------Exception-------
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: Class: Errno::ECONNREFUSED
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: Message: No connection could be made because the target machine actively refused it. - No connection could be made because the target machine actively refused it. - connect(2) for "127.0.0.1" port 2201 (127.0.0.1:2201)
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: ----------------------
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: ------Backtrace-------
+E, [2017-11-13T20:07:22.611311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:623:in `rescue in create_socket'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:607:in `create_socket'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:755:in `block in connect'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/timeout.rb:93:in `block in timeout'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/timeout.rb:103:in `timeout'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:748:in `connect'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:511:in `query'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient/session.rb:177:in `query'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:1242:in `do_get_block'
+E, [2017-11-13T20:07:22.611811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:1019:in `block in do_request'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:1133:in `protect_keep_alive_disconnected'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:1014:in `do_request'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:856:in `request'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib/httpclient.rb:765:in `post'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/http/transport.rb:220:in `init_auth'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/http/transport.rb:168:in `send_request'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:152:in `max_envelope_size_kb'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:80:in `max_fragment_blob_size'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:198:in `fragmenter'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:162:in `block in open_shell_payload'
+E, [2017-11-13T20:07:22.612311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:161:in `map'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:161:in `open_shell_payload'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/power_shell.rb:122:in `open_shell'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/base.rb:168:in `block in open'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/retryable.rb:37:in `retryable'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/base.rb:166:in `open'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/base.rb:129:in `with_command_shell'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/winrm-2.2.3/lib/winrm/shells/base.rb:81:in `run'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:232:in `unelevated_temp_dir'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:220:in `execute_with_exit_code'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:107:in `execute'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:69:in `block in call'
+E, [2017-11-13T20:07:22.612811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/base.rb:90:in `initialize'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:87:in `initialize'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:429:in `new'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:429:in `create_new_connection'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/transport/winrm.rb:74:in `connection'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/provisioner/base.rb:68:in `call'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-11-13T20:07:22.613311 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.17.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2017-11-13T20:07:22.613811 #8268] ERROR -- default-windows-2016r2: ----End Backtrace-----

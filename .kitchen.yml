@@ -1,0 +1,46 @@
+driver:
+  name: vagrant
+
+transport:
+  name: winrm
+  elevated: true
+
+provisioner:
+  name: chef_zero
+
+platforms:
+-
+  name: windows-2012r2
+  os_type: windows
+  shell_type: powershell
+  driver_config:
+    box: mwrock/Windows2012R2
+    #box: mwrock/Windows2012R2
+    #box_url: https://wrock.blob.core.windows.net/vhds/vbox2012r2.box
+    vm_hostname: win2012R2
+    communicator: winrm
+    gui : true
+    customize:
+      usb: 'off'
+    transport:
+      name: winrm
+-
+   name: 'windows-2016r2'
+   os_type: windows
+   shell_type: powershell
+   driver_config:
+     box: mwrock/Windows2016
+     vm_hostname: Win2016
+     communicator: winrm
+     gui: true
+     customize:
+       usb: 'off'
+     transport:
+       name: winrm
+
+suites:
+- name: default
+  run_list:
+  - recipe[windowsec]
+  attributes:
+    windowsec: default

@@ -1,0 +1,46 @@
+I, [2017-11-13T20:05:13.319811 #8268]  INFO -- default-windows-2012r2: -----> Converging <default-windows-2012r2>...
+I, [2017-11-13T20:05:13.323311 #8268]  INFO -- default-windows-2012r2: Preparing files for transfer
+I, [2017-11-13T20:05:13.324811 #8268]  INFO -- default-windows-2012r2: Preparing dna.json
+I, [2017-11-13T20:05:13.329811 #8268]  INFO -- default-windows-2012r2: Resolving cookbook dependencies with Berkshelf 6.3.1...
+I, [2017-11-13T20:05:14.924811 #8268]  INFO -- default-windows-2012r2: Removing non-cookbook files before transfer
+I, [2017-11-13T20:05:15.212811 #8268]  INFO -- default-windows-2012r2: Preparing validation.pem
+I, [2017-11-13T20:05:15.218311 #8268]  INFO -- default-windows-2012r2: Preparing client.rb
+I, [2017-11-13T20:05:19.433811 #8268]  INFO -- default-windows-2012r2: -----> Chef Omnibus installation detected (install only if missing)
+I, [2017-11-13T20:05:21.072811 #8268]  INFO -- default-windows-2012r2: Transferring files to <default-windows-2012r2>
+I, [2017-11-13T20:05:32.227311 #8268]  INFO -- default-windows-2012r2: Starting Chef Client, version 13.6.4
+I, [2017-11-13T20:05:36.888311 #8268]  INFO -- default-windows-2012r2: resolving cookbooks for run list: ["wow_windows_ec2"]
+I, [2017-11-13T20:05:39.591311 #8268]  INFO -- default-windows-2012r2: Synchronizing Cookbooks:
+I, [2017-11-13T20:05:39.615811 #8268]  INFO -- default-windows-2012r2:   - wow_windows_ec2 (0.2.0)
+I, [2017-11-13T20:05:39.635811 #8268]  INFO -- default-windows-2012r2:   - windows (1.38.4)
+I, [2017-11-13T20:05:39.653311 #8268]  INFO -- default-windows-2012r2:   - datadog (2.12.0)
+I, [2017-11-13T20:05:39.671811 #8268]  INFO -- default-windows-2012r2:   - bbwin (1.0.1)
+I, [2017-11-13T20:05:39.689311 #8268]  INFO -- default-windows-2012r2:   - chef_handler (3.0.2)
+I, [2017-11-13T20:05:39.707311 #8268]  INFO -- default-windows-2012r2:   - apt (6.1.4)
+I, [2017-11-13T20:05:39.723811 #8268]  INFO -- default-windows-2012r2:   - yum (5.0.1)
+I, [2017-11-13T20:05:39.740811 #8268]  INFO -- default-windows-2012r2: Installing Cookbook Gems:
+I, [2017-11-13T20:05:39.760811 #8268]  INFO -- default-windows-2012r2: Compiling Cookbooks...
+I, [2017-11-13T20:05:39.778811 #8268]  INFO -- default-windows-2012r2: Converging 4 resources
+I, [2017-11-13T20:05:39.796811 #8268]  INFO -- default-windows-2012r2: Recipe: wow_windows_ec2::default
+I, [2017-11-13T20:05:39.816311 #8268]  INFO -- default-windows-2012r2:   * windows_package[awsssmagentinstall] action install
+I, [2017-11-13T20:05:39.835811 #8268]  INFO -- default-windows-2012r2:   Recipe: <Dynamically Defined Resource>
+I, [2017-11-13T20:05:39.855311 #8268]  INFO -- default-windows-2012r2:     * remote_file[C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AmazonSSMAgentSetup.exe] action create
+I, [2017-11-13T20:06:15.706811 #8268]  INFO -- default-windows-2012r2:       - create new file C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AmazonSSMAgentSetup.exe
+I, [2017-11-13T20:06:15.721811 #8268]  INFO -- default-windows-2012r2:       - update content in file C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AmazonSSMAgentSetup.exe from none to 9cabb6
+I, [2017-11-13T20:06:15.738311 #8268]  INFO -- default-windows-2012r2:       (file sizes exceed 10000000 bytes, diff output suppressed)
+I, [2017-11-13T20:06:36.928311 #8268]  INFO -- default-windows-2012r2: 
+I, [2017-11-13T20:06:36.944811 #8268]  INFO -- default-windows-2012r2: Recipe: wow_windows_ec2::default
+I, [2017-11-13T20:06:36.964311 #8268]  INFO -- default-windows-2012r2:   * windows_package[AWSAgentInstall] action install
+I, [2017-11-13T20:06:36.981311 #8268]  INFO -- default-windows-2012r2:   Recipe: <Dynamically Defined Resource>
+I, [2017-11-13T20:06:36.998811 #8268]  INFO -- default-windows-2012r2:     * remote_file[C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AWSAgentInstall.exe] action create
+I, [2017-11-13T20:06:42.725311 #8268]  INFO -- default-windows-2012r2:       - create new file C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AWSAgentInstall.exe
+I, [2017-11-13T20:06:42.748311 #8268]  INFO -- default-windows-2012r2:       - update content in file C:\Users\vagrant\AppData\Local\Temp\kitchen\cache/AWSAgentInstall.exe from none to 603cff
+I, [2017-11-13T20:06:42.767811 #8268]  INFO -- default-windows-2012r2:       (new content is binary, diff output suppressed)
+I, [2017-11-13T20:07:10.852811 #8268]  INFO -- default-windows-2012r2: 
+I, [2017-11-13T20:07:10.869311 #8268]  INFO -- default-windows-2012r2: Recipe: wow_windows_ec2::default
+I, [2017-11-13T20:07:10.886311 #8268]  INFO -- default-windows-2012r2:   * cookbook_file[C:\Program Files\Amazon\SSM\Plugins\awsCloudWatch\AWS.EC2.Windows.CloudWatch.json] action create (up to date)
+I, [2017-11-13T20:07:10.903811 #8268]  INFO -- default-windows-2012r2:   * windows_service[AmazonSSMAgent] action configure_startup (up to date)
+I, [2017-11-13T20:07:10.921311 #8268]  INFO -- default-windows-2012r2: 
+I, [2017-11-13T20:07:10.941311 #8268]  INFO -- default-windows-2012r2: Running handlers:
+I, [2017-11-13T20:07:10.956311 #8268]  INFO -- default-windows-2012r2: Running handlers complete
+I, [2017-11-13T20:07:10.976811 #8268]  INFO -- default-windows-2012r2: Chef Client finished, 4/6 resources updated in 01 minutes 39 seconds
+I, [2017-11-13T20:07:11.199311 #8268]  INFO -- default-windows-2012r2: Finished converging <default-windows-2012r2> (1m57.87s).
